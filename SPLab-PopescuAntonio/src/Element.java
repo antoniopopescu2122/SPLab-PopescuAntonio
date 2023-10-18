@@ -1,6 +1,8 @@
 import java.util.List;
 
-public class Element {
-	public List <Paragraph> Paragraphs;
-	
+public interface Element {
+	public void print();
+	public void add(Element e);
+	public void remove(Element e);
+	public Element get(int i);
 }

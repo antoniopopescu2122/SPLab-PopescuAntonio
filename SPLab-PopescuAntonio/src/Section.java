@@ -1,33 +1,38 @@
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class Table implements Element{
+public class Section implements Element{
 	public String title;
 	public List <Element> elements;
 	
-	public Table(String n) {
-		title=n;
+	public Section(String t) {
+		title = t;
+		elements = new ArrayList<>();
 	}
-	
+
+	@Override
 	public void print() {
 		System.out.println(Arrays.toString(elements.toArray()));
+		
 	}
 
 	@Override
 	public void add(Element e) {
-		// TODO Auto-generated method stub
+		elements.add(e);
 		
 	}
 
 	@Override
 	public void remove(Element e) {
-		// TODO Auto-generated method stub
+		elements.remove(e);
 		
 	}
 
 	@Override
 	public Element get(int i) {
-		// TODO Auto-generated method stub
-		return null;
+		return elements.get(i);
 	}
+	
+	
 }

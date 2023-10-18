@@ -1,25 +1,23 @@
 import java.util.ArrayList;
 
-public class Book {
-		public String title;
-		public ArrayList <Author> Authors;
-		public ArrayList <Chapter> Chapters;
+public class Book extends Section { 
+		public ArrayList <Author> authors;
 		
-		public Book(String t) {
-			title=t;
-			Authors = new ArrayList<>();
-			Chapters = new ArrayList<>();
+		public Book(String t) { 
+			super(t);
+			authors = new ArrayList<>();
 		}
 		
 		public void print() {
 			System.out.println("Book's title is " + title + "!!");
+			super.print();
 		}
 		
-		public void addAuthors(Author a) {
-			Authors.add(a);
+		public void addAuthor(Author a) {
+			authors.add(a);
 		}
 		
-		public void addChapters(Chapter c) {
-			Chapters.add(c);
+		public void addContent(Element e) {
+			elements.add(e);
 		}
 }
