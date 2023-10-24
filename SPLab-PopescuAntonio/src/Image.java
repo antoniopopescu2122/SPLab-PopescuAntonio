@@ -1,4 +1,3 @@
-import java.util.Arrays;
 import java.util.List;
 
 public class Image implements Element{
@@ -7,15 +6,21 @@ public class Image implements Element{
 	
 	public Image(String n) {
 		imageName=n;
+		//TODO method to load
+	}
+	
+	public String getImageName() {
+		return imageName;
 	}
 	
 	public void print() {
-		System.out.println(Arrays.toString(elements.toArray()));
+			System.out.println("Image's name is " + imageName + ". -img \n");
+			//TODO method to print
 	}
 
 	@Override
 	public void add(Element e) {
-		// TODO Auto-generated method stub
+		elements.add(e);
 		
 	}
 

@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class Section implements Element{
@@ -12,9 +11,17 @@ public class Section implements Element{
 	}
 
 	@Override
-	public void print() {
-		System.out.println(Arrays.toString(elements.toArray()));
-		
+	public void print() { 
+		if(this instanceof Book)
+			System.out.println("Book's name is " + title +". \n");
+		else
+			System.out.println("Section's name is " + title +". -- \n");
+	
+		if(elements.size()>0)
+			for(Element el:elements){
+				el.print();
+			}
+	//TODO bonus feature: identation of nested sections/elements
 	}
 
 	@Override

@@ -8,10 +8,6 @@ public class Book extends Section {
 			authors = new ArrayList<>();
 		}
 		
-		public void print() {
-			System.out.println("Book's title is " + title + "!!");
-			super.print();
-		}
 		
 		public void addAuthor(Author a) {
 			authors.add(a);

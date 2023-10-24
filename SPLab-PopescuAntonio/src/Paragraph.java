@@ -1,4 +1,3 @@
-import java.util.Arrays;
 import java.util.List;
 
 public class Paragraph implements Element{
@@ -10,7 +9,7 @@ public class Paragraph implements Element{
 	}
 	
 	public void print() {
-		System.out.println(Arrays.toString(elements.toArray()));
+		System.out.println("Paragraph's name is " + text + ". \n");
 	}
 
 	@Override

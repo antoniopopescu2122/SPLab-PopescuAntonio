@@ -1,4 +1,3 @@
-import java.io.*;
 
 public class Main {
 
@@ -16,7 +15,8 @@ public class Main {
 		cap1.add(cap11);
 		cap11.add(new Paragraph("Text from subchapter 1.1"));
 		cap11.add(cap111);
-		cap111.add(new Paragraph("Text from subchapter 1.1.1")); cap111.add(cap1111);
+		cap111.add(new Paragraph("Text from subchapter 1.1.1")); 
+		cap111.add(cap1111);
 		cap1111.add(new Image ("Image subchapter 1.1.1.1"));
 		noapteBuna.print();
 		}
