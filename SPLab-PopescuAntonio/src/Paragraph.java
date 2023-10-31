@@ -2,6 +2,7 @@ import java.util.List;
 
 public class Paragraph implements Element{
 	public String text;
+	AlignStrategy textAlignment = new AlignLeft();
 	public List <Element> elements;
 	
 	public Paragraph(String t) {
@@ -9,9 +10,13 @@ public class Paragraph implements Element{
 	}
 	
 	public void print() {
-		System.out.println("Paragraph's name is " + text + ". \n");
+		System.out.println("Paragraph's text is:\n" + text + ". \n");
 	}
 
+	void setAlignStrategy(AlignStrategy alignment) {
+		alignment.render(this, text);
+	}
+	
 	@Override
 	public void add(Element e) {
 		// TODO Auto-generated method stub

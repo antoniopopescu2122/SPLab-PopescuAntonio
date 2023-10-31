@@ -9,3 +9,8 @@
 /Table.class
 /Section.class
 /ImageProxy.class
+/Picture.class
+/AlignStrategy.class
+/AlignRight.class
+/AlignLeft.class
+/AlignCenter.class

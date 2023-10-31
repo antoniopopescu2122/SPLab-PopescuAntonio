@@ -2,6 +2,7 @@ import java.util.List;
 
 public class Image implements Element{
 	public String imageName;
+	
 	public List <Element> elements;
 	
 	public Image(String n) {
